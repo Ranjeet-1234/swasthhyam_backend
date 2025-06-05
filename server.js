@@ -16,6 +16,9 @@ app.use('/api/services', require('./routes/serviceRoute'));
 app.use('/api/products', require('./routes/productRoute'));
 app.use('/api/activities', require('./routes/activityRoute'));
 app.use('/api/testimonials', require('./routes/testimonialRoute'));
+app.get('/',(req,res)=>{
+  res.send("welcome to Swasthhyam")
+})
 
 app.listen(process.env.PORT , () => {
   console.log(`Server running... ${process.env.PORT}`);
